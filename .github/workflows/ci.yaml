@@ -1,6 +1,10 @@
 name: CI
 
-on: push # Trigger Point
+on: # Trigger Point
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   linting:
